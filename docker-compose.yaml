@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  get2post:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: get2post
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+    environment:
+      - PORT=8080
+    labels:
+      - "cosmos-force-network-secured=true"
