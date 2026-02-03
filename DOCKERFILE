@@ -3,7 +3,7 @@ FROM golang:1.21-alpine AS builder
 
 WORKDIR /app
 
-# Copia i file del modulo Go
+# Copia i file del modulo di Go
 COPY go.mod* ./
 # Se hai dipendenze, decommentare:
 # RUN go mod download
